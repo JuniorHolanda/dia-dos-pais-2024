@@ -95,16 +95,19 @@ button, input {
   border: solid red;
 }
 .second-page .container-carousel {
-  width: 100%;
+  border: solid blue;
+  overflow-x: scroll;
   display: flex;
   gap: 30px;
 }
 .second-page .container-carousel .carousel {
+  display: flex;
   border-radius: 30px;
-  width: 400px;
+  width: 600px;
+  height: 400px;
   overflow: hidden;
+  border: solid salmon;
 }
 .second-page .container-carousel .carousel .carousel-item {
-  border: solid;
-  height: 450px;
+  height: 1000px;
 }/*# sourceMappingURL=main.css.map */
