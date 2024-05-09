@@ -1,0 +1,64 @@
+@import url("https://use.typekit.net/bmd0hmu.css");
+@import url("https://use.typekit.net/zve5vjt.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a, ul, li, ol {
+  text-decoration: none;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+.first-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #434494;
+  width: 100vw;
+  height: 100vh;
+}
+.first-page .container-text-first {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+.first-page .container-img-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.first-page .container-img-first .img-first {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+.first-page .container-img-first .img-first-item {
+  position: absolute;
+}
+.first-page .container-img-first .item-1 {
+  z-index: 1;
+}
+.first-page .container-img-first .item-2 {
+  z-index: 0;
+}/*# sourceMappingURL=main.css.map */
