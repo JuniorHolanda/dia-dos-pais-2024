@@ -2,7 +2,7 @@ const circleMiriam = document.querySelector('#circleMiriam');
 
 let  angle = 0;
 
-export function circleRotation () {
+function circleRotation () {
     // incrementa o angulo
     angle += .3;
 
@@ -11,3 +11,5 @@ export function circleRotation () {
     requestAnimationFrame(circleRotation)
     console.log('funcionou')
 }
+
+circleRotation();

@@ -36,6 +36,21 @@ button, input {
   align-items: center;
   text-align: start;
 }
+.first-page .container-text-first .title-first-page {
+  color: #F2F2F2;
+  padding: 10px 0;
+  font-size: 3rem;
+  font-family: "hatch-sans", sans-serif;
+}
+.first-page .container-text-first .text-first-page {
+  color: #F2F2F2;
+  padding: 5px 0;
+  font-size: 1rem;
+  font-family: "hatch-sans", sans-serif;
+  font-weight: 200;
+  line-height: 2;
+  letter-spacing: 2px;
+}
 .first-page .container-img-first {
   display: flex;
   flex-direction: column;
@@ -54,11 +69,42 @@ button, input {
   align-items: start;
 }
 .first-page .container-img-first .img-first-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  width: 70%;
 }
 .first-page .container-img-first .item-1 {
   z-index: 1;
 }
 .first-page .container-img-first .item-2 {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
   z-index: 0;
+  width: 600px;
+}
+
+.second-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  border: solid red;
+}
+.second-page .container-carousel {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+.second-page .container-carousel .carousel {
+  border-radius: 30px;
+  width: 400px;
+  overflow: hidden;
+}
+.second-page .container-carousel .carousel .carousel-item {
+  border: solid;
+  height: 450px;
 }/*# sourceMappingURL=main.css.map */

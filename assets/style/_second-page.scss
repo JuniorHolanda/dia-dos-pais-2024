@@ -1,0 +1,24 @@
+.second-page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    border: solid red;
+
+    .container-carousel {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+
+        .carousel {
+            border-radius: 30px;
+            width: 400px;
+            overflow: hidden;
+
+            .carousel-item {
+                border: solid;
+                height: 450px;
+            }
+        }
+    }
+}
