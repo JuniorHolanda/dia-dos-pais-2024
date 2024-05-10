@@ -7,7 +7,7 @@
     .container-carousel {
         display: grid;
         grid-template-columns: repeat(10, 300px);
-        gap: 20px; /* Reduzindo o espaçamento entre os itens */
+        gap: 90px; /* Reduzindo o espaçamento entre os itens */
         max-width: 100%; // Garante que não ultrapasse a largura da tela
         height: 50%;
         overflow: hidden;

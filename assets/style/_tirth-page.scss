@@ -1,0 +1,59 @@
+.tirth-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 30px;
+    padding: 30px;
+    background-color: #382949;
+    
+    .container-tirth-page-left{
+        align-items: end;
+    }
+    .container-tirth-page-left, .container-tirth-page-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        width: 50%;
+        height: 100%;
+        .container-card-bottle{
+            display: grid;
+            grid-template: 1fr / 1fr 1fr;
+            gap: 30px;
+            height: 50%;
+            width: 60%;
+
+
+            .card-bottle-1{
+                justify-self: end;
+                border-radius: 30px;
+                background-color: rgb(55, 75, 67);
+            }
+
+            .card-bottle-2{
+                justify-self: start;
+                border-radius: 30px;
+                background-color: rgb(214, 214, 214);
+            }
+        }  
+
+        .container-gif-bottle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            overflow: hidden;
+            width: 60%;
+
+        }
+    }
+
+    .container-tirth-page-right{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}

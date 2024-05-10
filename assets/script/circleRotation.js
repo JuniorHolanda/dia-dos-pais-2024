@@ -9,7 +9,6 @@ export function circleRotation () {
     circleMiriam.style.transform = `rotate(${angle}deg)`
 
     requestAnimationFrame(circleRotation)
-    console.log('funcionou')
 }
 
 circleRotation();

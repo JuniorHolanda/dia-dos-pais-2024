@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://use.typekit.net/bmd0hmu.css");
 @import url("https://use.typekit.net/zve5vjt.css");
 * {
@@ -92,22 +93,174 @@ button, input {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  border: solid red;
 }
 .second-page .container-carousel {
-  border: solid blue;
-  overflow-x: scroll;
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(10, 300px);
+  gap: 90px; /* Reduzindo o espaçamento entre os itens */
+  max-width: 100%;
+  height: 50%;
+  overflow: hidden;
 }
 .second-page .container-carousel .carousel {
   display: flex;
-  border-radius: 30px;
-  width: 600px;
-  height: 400px;
-  overflow: hidden;
-  border: solid salmon;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
-.second-page .container-carousel .carousel .carousel-item {
-  height: 1000px;
+.second-page .container-carousel .carousel-item {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 20px; /* Reduzindo a borda para evitar cortes abruptos */
+}
+.second-page .container-bottles {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.second-page .container-bottles .bottles-gif {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: end;
+}
+.second-page .container-bottles .bottles-gif-item {
+  border-radius: 30px;
+}
+.second-page .container-bottles .container-info-bottles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+}
+.second-page .container-bottles .info-bottles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.second-page .container-bottles .info-bottles .title-bottles {
+  color: #434494;
+  padding: 10px 0;
+  font-size: 2rem;
+  font-family: "hatch-sans", sans-serif;
+}
+.second-page .container-bottles .info-bottles .text-bottles {
+  font-size: 1rem;
+  font-family: "hatch-sans", sans-serif;
+  font-weight: 200;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+.second-page .container-bottles .info-bottles .btn-bottles {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  background-color: #434494;
+  color: #F2F2F2;
+  padding: 5px 10px;
+  border-radius: 20px; /* Reduzindo a borda */
+}
+
+.tirth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 30px;
+  padding: 30px;
+  background-color: #382949;
+}
+.tirth-page .container-tirth-page-left {
+  align-items: end;
+}
+.tirth-page .container-tirth-page-left, .tirth-page .container-tirth-page-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 50%;
+  height: 100%;
+}
+.tirth-page .container-tirth-page-left .container-card-bottle, .tirth-page .container-tirth-page-right .container-card-bottle {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  gap: 30px;
+  height: 50%;
+  width: 60%;
+}
+.tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-1, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-1 {
+  justify-self: end;
+  border-radius: 30px;
+  background-color: rgb(55, 75, 67);
+}
+.tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-2, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-2 {
+  justify-self: start;
+  border-radius: 30px;
+  background-color: rgb(214, 214, 214);
+}
+.tirth-page .container-tirth-page-left .container-gif-bottle, .tirth-page .container-tirth-page-right .container-gif-bottle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 60%;
+}
+.tirth-page .container-tirth-page-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.card-bottle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card-bottle .container-card {
+  display: flex;
+  flex-direction: center;
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  overflow: hidden;
+}
+.card-bottle .container-card .img-card {
+  width: 100%;
+}
+.card-bottle .info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+}
+.card-bottle .info-card .title-info-card {
+  color: #F2F2F2;
+  font-size: 2rem;
+  font-family: "hatch-sans", sans-serif;
+}
+.card-bottle .info-card .description-info-card {
+  font-size: 1rem;
+  font-family: "hatch-sans", sans-serif;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.card-bottle .info-card .btn-info-card {
+  background-color: rgb(231, 90, 55);
+  padding: 5px;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
