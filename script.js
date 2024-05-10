@@ -1,6 +1,4 @@
-import { circleRotation } from "./assets/script/circleRotation.js";
-
-circleRotation();
+import {circleRotation} from './assets/script/circleRotation.js'
 
 const containerForCarousel = document.getElementById('containerForCarousel');
 let position = 0;
@@ -21,6 +19,3 @@ function moveCarousel() {
     // Solicita a próxima animação
     requestAnimationFrame(moveCarousel);
 }
-
-// Inicia a animação
-moveCarousel();
