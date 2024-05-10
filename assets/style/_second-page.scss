@@ -3,23 +3,85 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    border: solid red;
 
     .container-carousel {
-        border: solid blue;
-        overflow-x: scroll;
-        display: flex;
-        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(10, 300px);
+        gap: 20px; /* Reduzindo o espaçamento entre os itens */
+        max-width: 100%; // Garante que não ultrapasse a largura da tela
+        height: 50%;
+        overflow: hidden;
+        
         .carousel {
             display: flex;
-            border-radius: 30px;
-            width: 600px;
-            height: 400px;
-            overflow: hidden;
-            border: solid salmon;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden; // Oculta o scroll horizontal apenas para os itens do carrossel
+        }
 
-            .carousel-item {
-                height: 1000px;
+        .carousel-item {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 20px; /* Reduzindo a borda para evitar cortes abruptos */
+        }
+    }
+
+    .container-bottles {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        
+        .bottles-gif{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .bottles-gif-item {
+            border-radius: 30px;
+        }
+        
+        .container-info-bottles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            width: 50%;
+        }
+
+        .info-bottles {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+
+            .title-bottles {
+                color: $primary-color;
+                padding: 10px 0;
+                font-size: 2rem;
+                font-family: $secundary-font;
+            }
+
+            .text-bottles {
+                font-size: 1rem;
+                font-family: $secundary-font;
+                font-weight: 200;
+                line-height: 2;
+                letter-spacing: 2px;
+            }
+
+            .btn-bottles {
+                display: flex;
+                justify-content: center;
+                width: 30%;
+                background-color: $primary-color;
+                color: $sixth-color;
+                padding: 5px 10px;
+                border-radius: 20px; /* Reduzindo a borda */
             }
         }
     }
