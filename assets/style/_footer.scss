@@ -1,0 +1,81 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rebeccapurple;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 0rem 2rem;
+    gap: 5rem;
+
+    .data-corp-footer{
+        display: flex;
+        gap: 5rem;
+
+        .container-contacts-footer{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            
+            .title-contact-footer{
+                color: #000000;
+                font-size: 2rem;
+                font-family: $secundary-font;
+            }
+
+            .list-contact-footer{
+                font-size: 1rem;
+                font-family: $secundary-font;
+                font-weight: 200;
+                line-height: 2;
+                letter-spacing: 2px;
+            }
+        }
+
+        .business-hours-footer{
+            .title-hours-footer{
+                color: #000000;
+                font-size: 2rem;
+                font-family: $secundary-font;
+            }
+
+            .hours-footer{
+                font-size: 1rem;
+                font-family: $secundary-font;
+                font-weight: 200;
+                line-height: 2;
+                letter-spacing: 2px;
+            } 
+        }
+
+        .container-rules-footer{   
+            .title-rules-footer{
+                color: #000000;
+                font-size: 2rem;
+                font-family: $secundary-font;
+            }
+
+            .list-rules-footer{
+                font-size: 1rem;
+                font-family: $secundary-font;
+                font-weight: 200;
+                line-height: 2;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+.signature-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family: $secundary-font;
+    font-weight: 200;
+    line-height: 2;
+    letter-spacing: 2px;
+}
