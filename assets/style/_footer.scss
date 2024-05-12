@@ -1,7 +1,7 @@
 footer{
     display: flex;
     flex-direction: column;
-    background-color: rebeccapurple;
+    background-color: $dark-color;
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ footer{
             gap: 1rem;
             
             .title-contact-footer{
-                color: #000000;
+                color: $fifth-color;
                 font-size: 2rem;
                 font-family: $secundary-font;
             }
@@ -26,6 +26,7 @@ footer{
             .list-contact-footer{
                 font-size: 1rem;
                 font-family: $secundary-font;
+                color: $sixth-color;
                 font-weight: 200;
                 line-height: 2;
                 letter-spacing: 2px;
@@ -34,7 +35,7 @@ footer{
 
         .business-hours-footer{
             .title-hours-footer{
-                color: #000000;
+                color: $fifth-color;
                 font-size: 2rem;
                 font-family: $secundary-font;
             }
@@ -42,6 +43,7 @@ footer{
             .hours-footer{
                 font-size: 1rem;
                 font-family: $secundary-font;
+                color: $sixth-color;
                 font-weight: 200;
                 line-height: 2;
                 letter-spacing: 2px;
@@ -50,7 +52,7 @@ footer{
 
         .container-rules-footer{   
             .title-rules-footer{
-                color: #000000;
+                color: $fifth-color;
                 font-size: 2rem;
                 font-family: $secundary-font;
             }
@@ -58,6 +60,7 @@ footer{
             .list-rules-footer{
                 font-size: 1rem;
                 font-family: $secundary-font;
+                color: $sixth-color;
                 font-weight: 200;
                 line-height: 2;
                 letter-spacing: 2px;
@@ -75,6 +78,7 @@ footer{
     text-align: center;
     font-size: 1rem;
     font-family: $secundary-font;
+    background: #161616;
     font-weight: 200;
     line-height: 2;
     letter-spacing: 2px;
