@@ -83,3 +83,9 @@ footer{
     line-height: 2;
     letter-spacing: 2px;
 }
+
+@media screen and (min-width: 393px) and (max-width: 500px) {
+    .data-corp-footer{
+        flex-direction: column;
+    }
+}

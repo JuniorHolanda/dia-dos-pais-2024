@@ -91,6 +91,38 @@ button, input {
   width: 600px;
 }
 
+@media screen and (min-width: 393px) and (max-width: 500px) {
+  .first-page {
+    flex-direction: column;
+    width: 95%;
+    border-radius: 20px;
+    height: 85vh;
+  }
+  .first-page .container-text-first {
+    width: 100%;
+    height: 100%;
+  }
+  .first-page .container-text-first .text-wrapper-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .first-page .container-text-first .text-wrapper-first .pais-vector {
+    width: 300px;
+  }
+  .first-page .container-img-first .img-first {
+    align-items: center;
+  }
+  .first-page .container-img-first .item-1 {
+    z-index: 1;
+    width: 300px;
+  }
+  .first-page .container-img-first .item-2 {
+    width: 350px;
+  }
+}
 .second-page {
   display: flex;
   flex-direction: column;
@@ -158,6 +190,35 @@ button, input {
   transition: 0.3s;
 }
 
+@media screen and (min-width: 393px) and (max-width: 500px) {
+  .second-page {
+    width: 95%;
+  }
+  .second-page .container-bottles {
+    flex-direction: column;
+    height: 70%;
+    border-radius: 30px;
+  }
+  .second-page .container-bottles .bottles-gif {
+    width: 100%;
+    justify-content: center;
+  }
+  .second-page .container-bottles .bottles-gif-item {
+    border-radius: 30px;
+    width: 90%;
+  }
+  .second-page .container-bottles .container-info-bottles {
+    align-items: center;
+    width: 90%;
+  }
+  .second-page .container-bottles .info-bottles {
+    width: 100%;
+    align-items: center;
+  }
+  .second-page .container-bottles .text-bottles {
+    text-align: center;
+  }
+}
 .tirth-page {
   display: flex;
   justify-content: center;
@@ -432,6 +493,7 @@ button, input {
   align-items: end;
 }
 .fifth-page .container-wrapper .left-container .info-fifth {
+  align-items: end;
   text-align: end;
 }
 .fifth-page .container-wrapper .right-container {
@@ -480,10 +542,15 @@ button, input {
   display: flex;
   justify-content: center;
   width: 20%;
-  background-color: #448FF2;
-  color: #F2F2F2;
+  background-color: #F2B705;
+  color: #1c1b1f;
   padding: 5px 30px;
   border-radius: 20px;
+  cursor: pointer;
+}
+.fifth-page .container-wrapper .left-container .info-fifth .btn-fifth:hover, .fifth-page .container-wrapper .right-container .info-fifth .btn-fifth:hover {
+  background-color: #F23838;
+  transition: 0.3s;
 }
 
 footer {
@@ -560,6 +627,11 @@ footer .data-corp-footer .container-rules-footer .list-rules-footer {
   letter-spacing: 2px;
 }
 
+@media screen and (min-width: 393px) and (max-width: 500px) {
+  .data-corp-footer {
+    flex-direction: column;
+  }
+}
 .weapper-carousel {
   display: flex;
   align-items: center;
@@ -578,6 +650,15 @@ footer .data-corp-footer .container-rules-footer .list-rules-footer {
   border-radius: 30px;
 }
 
+@media screen and (min-width: 393px) and (max-width: 500px) {
+  .weapper-carousel {
+    height: 30%;
+  }
+  .weapper-carousel .container-carousel .carousel-item {
+    width: 180px;
+    border-radius: 30px;
+  }
+}
 @keyframes slide {
   from {
     transform: translateX(0);

@@ -75,3 +75,39 @@
         }
     }
 }
+
+@media screen and (min-width: 393px) and (max-width: 500px) {
+    .second-page {
+        width: 95%;
+
+        .container-bottles {
+            flex-direction: column;
+            height: 70%;
+            border-radius: 30px;
+
+            .bottles-gif{
+                width: 100%;
+                justify-content: center;
+            }
+
+            .bottles-gif-item {
+                border-radius: 30px;
+                width: 90%;
+            }
+
+            .container-info-bottles {
+                align-items: center;
+                width: 90%;
+            }
+
+            .info-bottles {
+                width: 100%;
+                align-items: center;
+            }
+
+            .text-bottles {
+                text-align: center;
+            }
+        }
+    }
+}

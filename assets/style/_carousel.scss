@@ -17,3 +17,16 @@
         }
     }
 }
+
+@media screen and (min-width: 393px) and (max-width: 500px){
+    .weapper-carousel{
+        height: 30%;
+
+        .container-carousel {
+            .carousel-item {
+                width: 180px;
+                border-radius: 30px;
+            }
+        }
+    }
+}
