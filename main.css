@@ -96,7 +96,7 @@ button, input {
     flex-direction: column;
     width: 95%;
     border-radius: 20px;
-    height: 85vh;
+    height: 100vh;
   }
   .first-page .container-text-first {
     width: 100%;
@@ -120,7 +120,7 @@ button, input {
     width: 300px;
   }
   .first-page .container-img-first .item-2 {
-    width: 350px;
+    width: 280px;
   }
 }
 .second-page {
@@ -197,7 +197,7 @@ button, input {
   .second-page .container-bottles {
     flex-direction: column;
     height: 70%;
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0;
   }
   .second-page .container-bottles .bottles-gif {
     width: 100%;
@@ -224,7 +224,6 @@ button, input {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
   gap: 30px;
   padding: 30px;
   background-color: #e9e9e9;
@@ -273,6 +272,40 @@ button, input {
   width: 50%;
 }
 
+@media screen and (min-width: 393px) and (max-width: 500px) {
+  .tirth-page {
+    flex-direction: column;
+    justify-content: end;
+    width: 95%;
+    gap: 30;
+  }
+  .tirth-page .container-tirth-page-left, .tirth-page .container-tirth-page-right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .tirth-page .container-tirth-page-left .container-gif-bottle, .tirth-page .container-tirth-page-right .container-gif-bottle {
+    order: 2;
+  }
+  .tirth-page .container-tirth-page-left .container-card-bottle, .tirth-page .container-tirth-page-right .container-card-bottle {
+    width: 100%;
+    order: 1;
+  }
+  .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-1, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-1 {
+    justify-self: center;
+  }
+  .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-2, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-2 {
+    justify-self: start;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+    transition: 0.3s;
+  }
+  .tirth-page .container-tirth-page-left .container-gif-bottle, .tirth-page .container-tirth-page-right .container-gif-bottle {
+    width: 100%;
+  }
+  .tirth-page .container-tirth-page-left .container-gif-bottle img, .tirth-page .container-tirth-page-right .container-gif-bottle img {
+    width: 100%;
+  }
+}
 .fourth-page {
   display: flex;
   flex-direction: column;
@@ -416,6 +449,62 @@ button, input {
   transition: 0.3s;
 }
 
+@media screen and (min-width: 393px) and (max-width: 500px) {
+  .fourth-page {
+    width: 95vw;
+    height: 100%;
+  }
+  .fourth-page .wrapper-content {
+    position: static;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+  }
+  .fourth-page .wrapper-content .container-up {
+    position: static;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .fourth-page .wrapper-content .container-up .info-fourth-page-1 {
+    align-items: center;
+    width: 100%;
+  }
+  .fourth-page .wrapper-content .container-up .info-fourth-page-1 .title-fourth-page {
+    text-align: center;
+  }
+  .fourth-page .wrapper-content .container-up .info-fourth-page-1 .info-fourth-page {
+    text-align: center;
+  }
+  .fourth-page .wrapper-content .container-up .info-fourth-page-1 .btn-fourth-page {
+    width: 60%;
+    padding: 5px 5px;
+  }
+  .fourth-page .wrapper-content .container-up .img-fourth-page-1 {
+    width: 100%;
+  }
+  .fourth-page .wrapper-content .container-down {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fourth-page .wrapper-content .container-down .img-fourth-page-2 {
+    width: 100%;
+    order: 2;
+  }
+  .fourth-page .wrapper-content .container-down .info-fourth-page-2 {
+    align-items: center;
+    width: 100%;
+    order: 1;
+  }
+  .fourth-page .wrapper-content .container-down .info-fourth-page-2 .info-fourth-page {
+    text-align: center;
+    width: 100%;
+  }
+}
 .card-bottle {
   display: flex;
   flex-direction: column;
@@ -553,6 +642,100 @@ button, input {
   transition: 0.3s;
 }
 
+@media screen and (min-width: 393px) and (max-width: 500px) {
+  .fifth-page {
+    width: 90vw;
+    height: auto;
+  }
+  .fifth-page .container-wrapper {
+    gap: 30px;
+    width: 100%;
+  }
+}
+/*
+
+
+        //ajustes individuais do container esquerdo
+        .left-container{
+            align-items: end;
+
+            .info-fifth{
+                align-items: end;
+                text-align: end;
+            }
+        }
+
+
+        //ajustes individuais do container direito
+        .right-container{
+            align-items: start;
+        }
+
+        .left-container , .right-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            width: 50%;
+            height: 100%;
+
+            .container-img-fifth{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 30px;
+
+                .img-fifth{
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+            }
+
+            .info-fifth{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                width: 70%;
+
+                .title-fifth{
+                    color: $dark-color;
+                    font-size: 2rem;
+                    font-family: $secundary-font;
+                }
+
+                .text-fifth{
+                    font-size: 1rem;
+                    font-family: $secundary-font;
+                    font-weight: 200;
+                    line-height: 2;
+                    letter-spacing: 2px;
+
+                }
+
+                .btn-fifth {
+                    display: flex;
+                    justify-content: center;
+                    width: 20%;
+                    background-color: $second-color;
+                    color: $dark-color;
+                    padding: 5px 30px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $fifth-color ;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+*/
 footer {
   display: flex;
   flex-direction: column;

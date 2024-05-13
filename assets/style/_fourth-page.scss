@@ -154,8 +154,71 @@
                     }
                 }
             }
-    
         }
+    }
+}
 
+@media screen and (min-width: 393px) and (max-width: 500px){
+    .fourth-page{
+        width: 95vw;
+        height: 100%;
+        
+        .wrapper-content{
+            position: static;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            gap: 30px;
+            
+            .container-up{
+                position: static;
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                .info-fourth-page-1{
+                    align-items: center;
+                    width: 100%;
+                    
+                    .title-fourth-page{
+                        text-align: center;
+                    }
+    
+                    .info-fourth-page{
+                        text-align: center;
+                    }
+    
+                    .btn-fourth-page{
+                        width: 60%;
+                        padding: 5px 5px;
+                    }
+                }
+
+                .img-fourth-page-1{
+                    width: 100%;
+                }
+            }
+            .container-down{
+                position: static;
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                justify-content: center;
+
+                .img-fourth-page-2{
+                    width: 100%;
+                    order: 2;
+                }
+
+                .info-fourth-page-2{
+                    align-items: center;
+                    width: 100%;
+                    order: 1;
+                    .info-fourth-page{
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }

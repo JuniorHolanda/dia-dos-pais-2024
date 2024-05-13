@@ -90,7 +90,104 @@
                     }
                 }
             }
-
         }
     }
 }
+
+@media screen and (min-width: 393px) and (max-width: 500px){
+    .fifth-page{
+        width: 90vw;
+        height: auto;
+
+        .container-wrapper{
+            gap: 30px;
+            width: 100%;
+        }
+    }
+}
+
+
+/*
+    
+   
+        //ajustes individuais do container esquerdo
+        .left-container{
+            align-items: end;
+            
+            .info-fifth{
+                align-items: end;
+                text-align: end;
+            }
+        }
+
+
+        //ajustes individuais do container direito
+        .right-container{
+            align-items: start;
+        }
+
+        .left-container , .right-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            width: 50%;
+            height: 100%;
+            
+            .container-img-fifth{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 30px;
+
+                .img-fifth{
+                    width: 100%;
+                    object-fit: cover;
+                }
+                
+            }
+            
+            .info-fifth{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                width: 70%;
+
+                .title-fifth{
+                    color: $dark-color;
+                    font-size: 2rem;
+                    font-family: $secundary-font;
+                }
+
+                .text-fifth{
+                    font-size: 1rem;
+                    font-family: $secundary-font;
+                    font-weight: 200;
+                    line-height: 2;
+                    letter-spacing: 2px;
+                    
+                }
+
+                .btn-fifth {
+                    display: flex;
+                    justify-content: center;
+                    width: 20%;
+                    background-color: $second-color;
+                    color: $dark-color;
+                    padding: 5px 30px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $fifth-color ;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+*/
