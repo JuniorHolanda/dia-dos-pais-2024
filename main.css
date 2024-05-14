@@ -300,11 +300,17 @@ button, input {
   border-radius: 30px;
   background-color: #F2F2F2;
 }
+.tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-1 .container-card, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-1 .container-card {
+  height: auto;
+}
 .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-2, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-2 {
   justify-self: start;
   border-radius: 30px;
   background-color: #F2F2F2;
   transition: 0.3s;
+}
+.tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-2 .container-card, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-2 .container-card {
+  height: auto;
 }
 .tirth-page .container-tirth-page-left .container-gif-bottle, .tirth-page .container-tirth-page-right .container-gif-bottle {
   display: flex;
@@ -327,7 +333,6 @@ button, input {
     justify-content: end;
     width: 95%;
     gap: 10px;
-    border: solid hsl(22, 100%, 50%);
     padding: 10px;
   }
   .tirth-page .container-tirth-page-left, .tirth-page .container-tirth-page-right {
@@ -343,21 +348,19 @@ button, input {
     gap: 10px;
   }
   .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-1, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-1 {
-    border: solid fuchsia;
     justify-self: center;
     padding-bottom: 20px;
     border-radius: 10px;
   }
-  .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-1 .container-card .img-card, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-1 .container-card .img-card {
-    height: 100%;
+  .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-1 .container-card, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-1 .container-card {
+    display: flex;
   }
   .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-2, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-2 {
-    border: solid rgb(0, 89, 255);
     padding-bottom: 20px;
     border-radius: 10px;
   }
-  .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-2 .container-card .img-card, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-2 .container-card .img-card {
-    height: 100%;
+  .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-2 .container-card, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-2 .container-card {
+    display: flex;
   }
   .tirth-page .container-tirth-page-left .container-gif-bottle, .tirth-page .container-tirth-page-right .container-gif-bottle {
     width: 100%;

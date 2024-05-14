@@ -36,6 +36,9 @@
                 justify-self: end;
                 border-radius: 30px;
                 background-color: $sixth-color;
+                .container-card{
+                    height: auto
+                }    
             }
 
             .card-bottle-2{
@@ -43,6 +46,9 @@
                 border-radius: 30px;
                 background-color: $sixth-color;
                 transition: .3s;
+                .container-card{
+                    height: auto
+                }
             }   
         }  
 
@@ -71,7 +77,6 @@
         justify-content: end;
         width: 95%;
         gap: 10px;
-        border: solid hsl(22, 100%, 50%);
         padding: 10px;
 
         .container-tirth-page-left, .container-tirth-page-right{
@@ -88,25 +93,19 @@
                 gap: 10px;
                 
                 .card-bottle-1{
-                    border: solid fuchsia;
                     justify-self: center;
                     padding-bottom: 20px ;
                     border-radius: 10px;
                     .container-card{
-                        .img-card{
-                            height: 100%;
-                        }
+                        display: flex;
                     }
                 }
                 
                 .card-bottle-2{
-                    border: solid rgb(0, 89, 255);
                     padding-bottom: 20px ;
                     border-radius: 10px;
                     .container-card{
-                        .img-card{
-                            height: 100%;
-                        }
+                        display: flex;
                     }
 
                 }   
