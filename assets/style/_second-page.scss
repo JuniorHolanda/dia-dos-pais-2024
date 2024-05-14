@@ -104,16 +104,51 @@
             .container-info-bottles {
                 align-items: center;
                 width: 90%;
+                
+                .info-bottles {
+                    width: 100%;
+                    align-items: center;
+
+                    .title-bottles{
+                        font-size: 1rem;
+                    }
+                    
+                    .text-bottles {
+                        text-align: center;
+                        font-size: 1rem;
+                        line-height: 1;
+                        letter-spacing: 1px;
+                    }
+
+                    .btn-bottles {
+                        width: 60%;
+                        padding: 5px 10px;
+                        border-radius: 20px;
+                    }
+                }
             }
 
-            .info-bottles {
-                width: 100%;
-                align-items: center;
-            }
-
-            .text-bottles {
-                text-align: center;
-            }
         }
     }
 }
+
+/*
+
+
+            .btn-bottles {
+                display: flex;
+                justify-content: center;
+                width: 30%;
+                background-color: $primary-color;
+                color: $sixth-color;
+                padding: 5px 10px;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    background-color: $fifth-color;
+                    transition: .3s;
+                }
+
+
+*/

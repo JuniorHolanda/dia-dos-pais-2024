@@ -223,14 +223,45 @@ button, input {
     align-items: center;
     width: 90%;
   }
-  .second-page .container-bottles .info-bottles {
+  .second-page .container-bottles .container-info-bottles .info-bottles {
     width: 100%;
     align-items: center;
   }
-  .second-page .container-bottles .text-bottles {
+  .second-page .container-bottles .container-info-bottles .info-bottles .title-bottles {
+    font-size: 1rem;
+  }
+  .second-page .container-bottles .container-info-bottles .info-bottles .text-bottles {
     text-align: center;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+  .second-page .container-bottles .container-info-bottles .info-bottles .btn-bottles {
+    width: 60%;
+    padding: 5px 10px;
+    border-radius: 20px;
   }
 }
+/*
+
+
+            .btn-bottles {
+                display: flex;
+                justify-content: center;
+                width: 30%;
+                background-color: $primary-color;
+                color: $sixth-color;
+                padding: 5px 10px;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    background-color: $fifth-color;
+                    transition: .3s;
+                }
+
+
+*/
 .tirth-page {
   display: flex;
   justify-content: center;
