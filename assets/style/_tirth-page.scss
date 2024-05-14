@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-   
     gap: 30px;
     padding: 30px;
     background-color: $seventh-color;
@@ -24,7 +23,14 @@
             gap: 30px;
             height: 50%;
             width: 60%;
+            border: solid darkorange;
 
+            .card-bottle{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+            }
 
             .card-bottle-1{
                 justify-self: end;
@@ -64,12 +70,14 @@
         flex-direction: column;
         justify-content: end;
         width: 95%;
-        gap: 30;
+        gap: 10px;
+        border: solid hsl(22, 100%, 50%);
+        padding: 10px;
 
         .container-tirth-page-left, .container-tirth-page-right{
             flex-direction: column;
             width: 100%;
-
+            
             .container-gif-bottle{
                 order: 2; 
             }
@@ -77,16 +85,30 @@
             .container-card-bottle{
                 width: 100%;
                 order: 1;
+                gap: 10px;
                 
                 .card-bottle-1{
+                    border: solid fuchsia;
                     justify-self: center;
+                    padding-bottom: 20px ;
+                    border-radius: 10px;
+                    .container-card{
+                        .img-card{
+                            height: 100%;
+                        }
+                    }
                 }
-
+                
                 .card-bottle-2{
-                    justify-self: start;
-                    border-radius: 30px;
-                    background-color: $sixth-color;
-                    transition: .3s;
+                    border: solid rgb(0, 89, 255);
+                    padding-bottom: 20px ;
+                    border-radius: 10px;
+                    .container-card{
+                        .img-card{
+                            height: 100%;
+                        }
+                    }
+
                 }   
             }
 

@@ -54,7 +54,7 @@ button, input {
   letter-spacing: 2px;
 }
 .first-page .container-text-first .text-first-page strong {
-  color: #F23838;
+  color: #00214D;
 }
 .first-page .container-img-first {
   position: relative;
@@ -198,7 +198,7 @@ button, input {
   transition: 0.3s;
 }
 .second-page .container-bottles .info-bottles .btn-bottles:hover {
-  background-color: #F23838;
+  background-color: #00214D;
   transition: 0.3s;
 }
 
@@ -228,7 +228,7 @@ button, input {
     align-items: center;
   }
   .second-page .container-bottles .container-info-bottles .info-bottles .title-bottles {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .second-page .container-bottles .container-info-bottles .info-bottles .text-bottles {
     text-align: center;
@@ -288,6 +288,12 @@ button, input {
   gap: 30px;
   height: 50%;
   width: 60%;
+  border: solid darkorange;
+}
+.tirth-page .container-tirth-page-left .container-card-bottle .card-bottle, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-1, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-1 {
   justify-self: end;
@@ -320,7 +326,9 @@ button, input {
     flex-direction: column;
     justify-content: end;
     width: 95%;
-    gap: 30;
+    gap: 10px;
+    border: solid hsl(22, 100%, 50%);
+    padding: 10px;
   }
   .tirth-page .container-tirth-page-left, .tirth-page .container-tirth-page-right {
     flex-direction: column;
@@ -332,15 +340,24 @@ button, input {
   .tirth-page .container-tirth-page-left .container-card-bottle, .tirth-page .container-tirth-page-right .container-card-bottle {
     width: 100%;
     order: 1;
+    gap: 10px;
   }
   .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-1, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-1 {
+    border: solid fuchsia;
     justify-self: center;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+  .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-1 .container-card .img-card, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-1 .container-card .img-card {
+    height: 100%;
   }
   .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-2, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-2 {
-    justify-self: start;
-    border-radius: 30px;
-    background-color: #F2F2F2;
-    transition: 0.3s;
+    border: solid rgb(0, 89, 255);
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+  .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle-2 .container-card .img-card, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle-2 .container-card .img-card {
+    height: 100%;
   }
   .tirth-page .container-tirth-page-left .container-gif-bottle, .tirth-page .container-tirth-page-right .container-gif-bottle {
     width: 100%;
@@ -408,7 +425,7 @@ button, input {
   cursor: pointer;
 }
 .fourth-page .wrapper-content .container-up .info-fourth-page-1 .btn-fourth-page:hover {
-  background-color: #F23838;
+  background-color: #00214D;
   transition: 0.3s;
 }
 .fourth-page .wrapper-content .container-up .img-fourth-page-1 {
@@ -488,7 +505,7 @@ button, input {
   cursor: pointer;
 }
 .fourth-page .wrapper-content .container-down .info-fourth-page-2 .btn-fourth-page:hover {
-  background-color: #F23838;
+  background-color: #00214D;
   transition: 0.3s;
 }
 
@@ -601,7 +618,7 @@ button, input {
   background-color: #448FF2;
 }
 .card-bottle .info-card .btn-info-card:hover {
-  background-color: #F23838;
+  background-color: #00214D;
   transition: 0.3s;
 }
 
@@ -683,7 +700,7 @@ button, input {
   cursor: pointer;
 }
 .fifth-page .container-wrapper .left-container .info-fifth .btn-fifth:hover, .fifth-page .container-wrapper .right-container .info-fifth .btn-fifth:hover {
-  background-color: #F23838;
+  background-color: #00214D;
   transition: 0.3s;
 }
 
@@ -751,7 +768,7 @@ button, input {
     cursor: pointer;
   }
   .fifth-page .container-wrapper .left-container .info-fifth .btn-fifth:hover, .fifth-page .container-wrapper .right-container .info-fifth .btn-fifth:hover {
-    background-color: #F23838;
+    background-color: #00214D;
     transition: 0.3s;
   }
 }
@@ -854,7 +871,7 @@ footer .data-corp-footer .container-contacts-footer {
   gap: 1rem;
 }
 footer .data-corp-footer .container-contacts-footer .title-contact-footer {
-  color: #F23838;
+  color: #00214D;
   font-size: 2rem;
   font-family: "hatch-sans", sans-serif;
 }
@@ -867,7 +884,7 @@ footer .data-corp-footer .container-contacts-footer .list-contact-footer {
   letter-spacing: 2px;
 }
 footer .data-corp-footer .business-hours-footer .title-hours-footer {
-  color: #F23838;
+  color: #00214D;
   font-size: 2rem;
   font-family: "hatch-sans", sans-serif;
 }
@@ -880,7 +897,7 @@ footer .data-corp-footer .business-hours-footer .hours-footer {
   letter-spacing: 2px;
 }
 footer .data-corp-footer .container-rules-footer .title-rules-footer {
-  color: #F23838;
+  color: #00214D;
   font-size: 2rem;
   font-family: "hatch-sans", sans-serif;
 }
