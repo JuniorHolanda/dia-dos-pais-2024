@@ -209,7 +209,7 @@ button, input {
   .second-page .container-bottles {
     flex-direction: column;
     height: 70%;
-    border-radius: 30px 30px 0 0;
+    border-radius: 10px;
   }
   .second-page .container-bottles .bottles-gif {
     width: 100%;
@@ -728,10 +728,8 @@ button, input {
     gap: 0;
     width: 100%;
     height: 100%;
-    border: solid blue;
   }
   .fifth-page .container-wrapper .left-container .container-img-fifth, .fifth-page .container-wrapper .right-container .container-img-fifth {
-    border: solid blueviolet;
     border-radius: 0;
     height: 40%;
   }
@@ -776,43 +774,6 @@ button, input {
     transition: 0.3s;
   }
 }
-/*
-
-                .title-fifth{
-                    color: $dark-color;
-                    font-size: 2rem;
-                    font-family: $secundary-font;
-                }
-
-                .text-fifth{
-                    font-size: 1rem;
-                    font-family: $secundary-font;
-                    font-weight: 200;
-                    line-height: 2;
-                    letter-spacing: 2px;
-
-                }
-
-                .btn-fifth {
-                    display: flex;
-                    justify-content: center;
-                    width: 20%;
-                    background-color: $second-color;
-                    color: $dark-color;
-                    padding: 5px 30px;
-                    border-radius: 20px;
-                    cursor: pointer;
-                    &:hover{
-                        background-color: $fifth-color ;
-                        transition: .3s;
-                    }
-                }
-            }
-        }
-    }
-}
-
-*/
 .weapper-carousel {
   display: flex;
   align-items: center;
@@ -939,4 +900,10 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
+}
+
+@media screen and (min-width: 312px) and (max-width: 500px) {
+  main {
+    gap: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
