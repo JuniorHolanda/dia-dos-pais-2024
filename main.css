@@ -376,7 +376,7 @@ button, input {
   width: 100vw;
   height: 100vh;
   padding: 30px;
-  background-color: #e79e00;
+  background-color: #448FF2;
 }
 .fourth-page .wrapper-content {
   position: relative;
@@ -515,7 +515,7 @@ button, input {
   .fourth-page {
     width: 95vw;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 10px;
   }
   .fourth-page .wrapper-content {
     position: static;
@@ -667,6 +667,7 @@ button, input {
   width: 100%;
   overflow: hidden;
   border-radius: 30px;
+  height: 20%;
 }
 .fifth-page .container-wrapper .left-container .container-img-fifth .fifth-img, .fifth-page .container-wrapper .right-container .container-img-fifth .fifth-img {
   width: 100%;
@@ -718,11 +719,11 @@ button, input {
     padding: 10px;
     align-items: start;
     width: 100%;
-    height: 40vh;
+    height: autp;
     justify-content: space-between;
   }
   .fifth-page .container-wrapper .left-container, .fifth-page .container-wrapper .right-container {
-    border-radius: 30px;
+    border-radius: 10px;
     overflow: hidden;
     gap: 0;
     width: 100%;
@@ -730,14 +731,13 @@ button, input {
   }
   .fifth-page .container-wrapper .left-container .container-img-fifth, .fifth-page .container-wrapper .right-container .container-img-fifth {
     border-radius: 0;
-    min-height: 40%;
+    height: 30%;
   }
   .fifth-page .container-wrapper .left-container .container-img-fifth .fifth-img, .fifth-page .container-wrapper .right-container .container-img-fifth .fifth-img {
     -o-object-position: center;
        object-position: center;
     -o-object-fit: cover;
        object-fit: cover;
-    width: auto;
     height: 100%;
   }
   .fifth-page .container-wrapper .left-container .info-fifth, .fifth-page .container-wrapper .right-container .info-fifth {
@@ -746,7 +746,7 @@ button, input {
     background-color: #F2F2F2;
     padding: 10px;
     align-items: center;
-    height: 100%;
+    height: auto;
   }
   .fifth-page .container-wrapper .left-container .info-fifth .title-fifth, .fifth-page .container-wrapper .right-container .info-fifth .title-fifth {
     font-size: 1.3rem;

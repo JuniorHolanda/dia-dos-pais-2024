@@ -47,12 +47,12 @@
                 width: 100%;
                 overflow: hidden;
                 border-radius: 30px;
+                height: 20%;
 
                 .fifth-img{
                     width: 100%;
                     object-fit: cover;
                 }
-                
             }
             
             .info-fifth{
@@ -108,14 +108,11 @@
             padding: 10px;
             align-items: start;
             width: 100%;
-            height: 40vh;
+            height: autp;
             justify-content: space-between;
 
-
-
-
             .left-container , .right-container{
-                border-radius: 30px;
+                border-radius: 10px;
                 overflow: hidden;
                 gap: 0;
                 width: 100%;
@@ -123,13 +120,11 @@
 
                 .container-img-fifth{
                     border-radius: 0;
-                    min-height: 40%;
+                    height: 30%;
                     .fifth-img{
                         object-position: center;
-                        object-fit: cover;
-                        width: auto ;
-                        height: 100%;
-
+                        object-fit:cover;
+                        height: 100% ;
                     }                    
                 }
                 .info-fifth{
@@ -138,7 +133,7 @@
                     background-color: $sixth-color;
                     padding: 10px;
                     align-items: center;
-                    height: 100%;
+                    height: auto;
 
                     .title-fifth{
                         font-size: 1.3rem;
@@ -151,7 +146,6 @@
                         line-height: 1;
                         letter-spacing: 1px;
                         text-align: center;
-                        
                     }
     
                     .btn-fifth {
