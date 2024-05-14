@@ -13,3 +13,10 @@
 @import 'assets/style/footer';
 @import 'assets/style/carousel';
 @import 'assets/style/animation';
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}

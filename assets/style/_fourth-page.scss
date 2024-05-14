@@ -162,13 +162,14 @@
     .fourth-page{
         width: 95vw;
         height: 100%;
+        border-radius: 30px;
         
         .wrapper-content{
             position: static;
             flex-direction: column;
             width: 100%;
             height: auto;
-            gap: 30px;
+            gap: 70px;
             
             .container-up{
                 position: static;
