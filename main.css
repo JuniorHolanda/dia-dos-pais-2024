@@ -91,12 +91,13 @@ button, input {
   width: 600px;
 }
 
-@media screen and (min-width: 350px) and (max-width: 500px) {
+@media screen and (min-width: 312px) and (max-width: 500px) {
   .first-page {
     flex-direction: column;
     width: 95%;
     border-radius: 20px;
     height: 100vh;
+    padding: 30px 30px 0 30px;
   }
   .first-page .container-text-first {
     width: 100%;
@@ -110,14 +111,14 @@ button, input {
     text-align: center;
   }
   .first-page .container-text-first .text-wrapper-first .pais-vector {
-    width: 300px;
+    width: 80%;
   }
   .first-page .container-img-first .img-first {
     align-items: center;
   }
   .first-page .container-img-first .item-1 {
     z-index: 1;
-    width: 300px;
+    width: 190%;
   }
   .first-page .container-img-first .item-2 {
     width: 280px;
@@ -190,7 +191,7 @@ button, input {
   transition: 0.3s;
 }
 
-@media screen and (min-width: 350px) and (max-width: 500px) {
+@media screen and (min-width: 312px) and (max-width: 500px) {
   .second-page {
     width: 95%;
   }
@@ -272,7 +273,7 @@ button, input {
   width: 50%;
 }
 
-@media screen and (min-width: 350px) and (max-width: 500px) {
+@media screen and (min-width: 312px) and (max-width: 500px) {
   .tirth-page {
     flex-direction: column;
     justify-content: end;
@@ -449,7 +450,7 @@ button, input {
   transition: 0.3s;
 }
 
-@media screen and (min-width: 350px) and (max-width: 500px) {
+@media screen and (min-width: 312px) and (max-width: 500px) {
   .fourth-page {
     width: 95vw;
     height: 100%;
@@ -644,7 +645,7 @@ button, input {
   transition: 0.3s;
 }
 
-@media screen and (min-width: 350px) and (max-width: 500px) {
+@media screen and (min-width: 312px) and (max-width: 500px) {
   .fifth-page {
     width: 95vw;
     height: auto;
@@ -749,6 +750,41 @@ button, input {
 }
 
 */
+.weapper-carousel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  gap: 30px;
+}
+.weapper-carousel .container-carousel {
+  display: flex;
+  gap: 30px;
+  animation: slide 40s infinite linear;
+}
+.weapper-carousel .container-carousel .carousel-item {
+  width: 300px;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 312px) and (max-width: 500px) {
+  .weapper-carousel {
+    height: 30%;
+  }
+  .weapper-carousel .container-carousel .carousel-item {
+    width: 180px;
+    border-radius: 30px;
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -823,44 +859,9 @@ footer .data-corp-footer .container-rules-footer .list-rules-footer {
   letter-spacing: 2px;
 }
 
-@media screen and (min-width: 393px) and (max-width: 500px) {
+@media screen and (min-width: 312px) and (max-width: 500px) {
   .data-corp-footer {
     flex-direction: column;
-  }
-}
-.weapper-carousel {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 50%;
-  overflow: hidden;
-  gap: 30px;
-}
-.weapper-carousel .container-carousel {
-  display: flex;
-  gap: 30px;
-  animation: slide 40s infinite linear;
-}
-.weapper-carousel .container-carousel .carousel-item {
-  width: 300px;
-  border-radius: 30px;
-}
-
-@media screen and (min-width: 393px) and (max-width: 500px) {
-  .weapper-carousel {
-    height: 30%;
-  }
-  .weapper-carousel .container-carousel .carousel-item {
-    width: 180px;
-    border-radius: 30px;
-  }
-}
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
   }
 }
 main {

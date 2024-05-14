@@ -73,13 +73,13 @@
     }
 
 }
-
-@media screen and (min-width: 350px) and (max-width: 500px) {
+@media screen and (min-width: 312px) and (max-width: 500px) {
     .first-page{
         flex-direction: column;
         width: 95%;
         border-radius: 20px;
         height: 100vh;
+        padding: 30px 30px 0 30px;
 
         .container-text-first{
             width: 100%;
@@ -93,7 +93,7 @@
                 text-align: center;
     
                 .pais-vector{
-                    width: 300px;
+                    width: 80%;
                 }
             }
         }
@@ -104,7 +104,7 @@
             }
             .item-1{
                 z-index: 1;
-                width: 300px;
+                width: 190%;
             }
         
             .item-2{
