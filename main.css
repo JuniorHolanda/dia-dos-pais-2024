@@ -103,6 +103,12 @@ button, input {
     width: 100%;
     height: 100%;
   }
+  .first-page .container-text-first .title-first-page {
+    font-size: 2rem;
+  }
+  .first-page .container-text-first .text-first-page {
+    font-size: 0.9rem;
+  }
   .first-page .container-text-first .text-wrapper-first {
     display: flex;
     justify-content: center;
@@ -111,7 +117,7 @@ button, input {
     text-align: center;
   }
   .first-page .container-text-first .text-wrapper-first .pais-vector {
-    width: 80%;
+    width: 60%;
   }
   .first-page .container-img-first .img-first {
     align-items: center;
@@ -869,4 +875,5 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */
