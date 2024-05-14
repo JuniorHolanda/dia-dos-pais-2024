@@ -117,10 +117,12 @@
                 gap: 0;
                 width: 100%;
                 height: 100%;
+                border: solid blue;
 
                 .container-img-fifth{
+                    border: solid blueviolet;
                     border-radius: 0;
-                    height: 30%;
+                    height: 40%;
                     .fifth-img{
                         object-position: center;
                         object-fit:cover;
