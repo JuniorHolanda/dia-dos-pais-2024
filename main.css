@@ -151,11 +151,13 @@ button, input {
 .second-page .container-bottles .bottles-gif {
   display: flex;
   width: 50%;
+  height: 100%;
   align-items: center;
   justify-content: end;
 }
 .second-page .container-bottles .bottles-gif .bottles-gif-item {
   border-radius: 30px;
+  height: 80%;
 }
 .second-page .container-bottles .container-info-bottles {
   display: flex;
