@@ -165,7 +165,6 @@ button, input {
   align-items: start;
   width: 50%;
   height: 100%;
-  border: solid;
 }
 .second-page .container-bottles .info-bottles {
   display: flex;
