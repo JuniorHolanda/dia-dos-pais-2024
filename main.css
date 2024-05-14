@@ -135,7 +135,6 @@ button, input {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  border: solid hotpink;
   padding-top: 30px;
   gap: 30px;
 }
@@ -770,7 +769,6 @@ button, input {
   height: 50%;
   overflow: hidden;
   gap: 90px;
-  border: solid blue;
 }
 .weapper-carousel .container-carousel {
   display: flex;
