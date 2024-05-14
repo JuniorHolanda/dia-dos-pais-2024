@@ -3,6 +3,9 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    border: solid hotpink;
+    padding-top: 30px;
+    gap: 30px;
 
     .container-bottles {
         display: flex;
@@ -18,18 +21,21 @@
             width: 50%;
             align-items: center;
             justify-content: end;
+
+            .bottles-gif-item {
+                border-radius: 30px;
+            }
         }
 
-        .bottles-gif-item {
-            border-radius: 30px;
-        }
-        
         .container-info-bottles {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: start;
             width: 50%;
+            height: 100%;
+            border: solid;
+
         }
 
         .info-bottles {
