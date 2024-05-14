@@ -23,8 +23,10 @@
 @media screen and (min-width: 312px) and (max-width: 500px){
     .weapper-carousel{
         height: 30%;
+        gap: 30px;
 
         .container-carousel {
+            gap: 30px;
             .carousel-item {
                 width: 180px;
                 border-radius: 30px;

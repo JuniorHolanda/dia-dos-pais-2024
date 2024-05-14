@@ -785,6 +785,10 @@ button, input {
 @media screen and (min-width: 312px) and (max-width: 500px) {
   .weapper-carousel {
     height: 30%;
+    gap: 30px;
+  }
+  .weapper-carousel .container-carousel {
+    gap: 30px;
   }
   .weapper-carousel .container-carousel .carousel-item {
     width: 180px;
