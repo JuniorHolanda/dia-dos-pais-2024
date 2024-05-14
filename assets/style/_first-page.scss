@@ -35,6 +35,7 @@
     }
 
     .container-img-first {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -42,7 +43,7 @@
         width: 50%;
         height: 100%;
         .img-first {
-            position: relative;
+            position: absolute;
             display: flex;
             width: 100%;
             height: 100%;
@@ -50,13 +51,11 @@
             justify-content: end;
             align-items: start;
         }
+        //acessa as duas imagens
         .img-first-item{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             position: absolute;
-
             width: 70%;
         }
         .item-1{
@@ -68,7 +67,7 @@
             top: 20%;
             transform: translateY(-50%);
             z-index: 0;
-            width: 600px;
+            width: 80%;
         }
     }
 
