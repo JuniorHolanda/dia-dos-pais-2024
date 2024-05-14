@@ -288,7 +288,6 @@ button, input {
   gap: 30px;
   height: 50%;
   width: 60%;
-  border: solid darkorange;
 }
 .tirth-page .container-tirth-page-left .container-card-bottle .card-bottle, .tirth-page .container-tirth-page-right .container-card-bottle .card-bottle {
   display: flex;
