@@ -5,4 +5,3 @@ import {circleRotation} from './assets/script/circleRotation.js'
 let copy = document.querySelector("#containerForCarousel").cloneNode(true);
 document.querySelector(".weapper-carousel").appendChild(copy);
 
-console.log('hello')
