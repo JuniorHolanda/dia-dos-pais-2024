@@ -1,43 +1,39 @@
+@import 'mixins';
+
 .first-page {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
     background-color: $primary-color;
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
+    padding-top: 20vh;
     overflow: hidden;
-    border: solid red;
 
     .container-text-first{
-        border: solid purple;
-        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
+        width: 50%;
+        height: 100%;
         text-align: start;
 
         .text-wrapper-first{
-            border: solid violet;
 
-            .glass-vector{
-                border: solid blue;
-            }
             .title-first-page{
-                border: solid red;
                 color: $sixth-color;
                 font-size: clamp(1.75em, 3em + 6vw, 4em);
                 font-family: $secundary-font;
             }
 
             .pais-vector{
-                border: solid rosybrown;
                 width: max(30px, 90%)
 
             }
 
             .text-first-page{
-                border: solid yellow;
                 color: $sixth-color;
                 padding: 5px 0;
                 font-size: 1rem;
@@ -54,15 +50,14 @@
 
     .container-img-first {
         position: relative;
-        border: solid goldenrod;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         width: 50%;
         height: 100%;
         .img-first {
-            position: absolute;
+
             display: flex;
             width: 100%;
             height: 100%;
@@ -74,19 +69,18 @@
         .img-first-item{
             display: flex;
             flex-direction: column;
-            position: absolute;
             width: 70%;
         }
         .item-1{
             z-index: 1;
+            @include clamp(width, 400px, 30vw, 50vw);
         }
     
         .item-2{
             position: absolute;
-            top: 20%;
-            transform: translateY(-50%);
+            top: 10%;
             z-index: 0;
-            width: 80%;
+            @include clamp(width, 400px, 30vw, 50vw);
         }
     }
 
