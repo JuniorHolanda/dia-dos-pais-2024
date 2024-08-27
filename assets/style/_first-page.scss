@@ -4,38 +4,57 @@
     align-items: center;
     background-color: $primary-color;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     overflow: hidden;
+    border: solid red;
 
     .container-text-first{
+        border: solid purple;
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: start;
-        .title-first-page{
-            color: $sixth-color;
-            padding: 10px 0;
-            font-size: 3rem;
-            font-family: $secundary-font;
-        }
-        .text-first-page{
-            color: $sixth-color;
-            padding: 5px 0;
-            font-size: 1rem;
-            font-family: $secundary-font;
-            font-weight: 200;
-            line-height: 2;
-            letter-spacing: 2px;
-            strong{
-                color: $fifth-color;
+
+        .text-wrapper-first{
+            border: solid violet;
+
+            .glass-vector{
+                border: solid blue;
+            }
+            .title-first-page{
+                border: solid red;
+                color: $sixth-color;
+                font-size: clamp(1.75em, 3em + 6vw, 4em);
+                font-family: $secundary-font;
+            }
+
+            .pais-vector{
+                border: solid rosybrown;
+                width: max(30px, 90%)
+
+            }
+
+            .text-first-page{
+                border: solid yellow;
+                color: $sixth-color;
+                padding: 5px 0;
+                font-size: 1rem;
+                font-family: $secundary-font;
+                font-weight: 200;
+                line-height: 2;
+                letter-spacing: 2px;
+                strong{
+                    color: $fifth-color;
+                }
             }
         }
     }
 
     .container-img-first {
         position: relative;
+        border: solid goldenrod;
         display: flex;
         flex-direction: column;
         justify-content: center;
