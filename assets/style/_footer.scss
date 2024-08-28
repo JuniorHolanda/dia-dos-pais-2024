@@ -2,7 +2,7 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: $dark-color;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: 2rem 2rem 0rem 2rem;
@@ -16,12 +16,12 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        @include clamp(width, 445px, 60vw, 70vw);
+        @include clamp(width, auto, 60vw, 70vw);
         @include clamp(gap, 10px, 3vw, 30px);
 
 
         .container-contacts-footer{
-            width: 40%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             gap: 1rem;
@@ -46,7 +46,7 @@ footer{
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            width: 40%;
+            width: 60%;
             .title-hours-footer{
                 color: $primary-color;
                 @include clamp(font-size, .5em, 1em, 1.5em );

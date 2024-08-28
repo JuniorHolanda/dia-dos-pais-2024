@@ -17,15 +17,12 @@
 //footer 
 @import 'assets/style/footer';
 
+html {
+    width: 100vw;
+}
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
-}
-
-@media screen and (min-width: 312px) and (max-width: 500px) {
-    main {
-        gap: 10px;
-    }
+    width: 100%;
 }
