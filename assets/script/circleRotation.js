@@ -6,7 +6,7 @@ export function circleRotation () {
     // incrementa o angulo
     angle += .3;
 
-    circleMiriam.style.transform = `rotate(${angle}deg)`
+    circleMiriam.style.transform = `translate(-50%, -50%) rotate(${angle}deg) `
 
     requestAnimationFrame(circleRotation)
 }

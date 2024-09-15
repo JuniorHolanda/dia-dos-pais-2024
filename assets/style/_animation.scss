@@ -1,9 +1,9 @@
-@keyframes slide {
+@keyframes carousel-auto-run {
     from {
-        transform: translateX(0);
+        left: 100%;
     }
 
     to {
-        transform: translateX(-100%);
+        left: -300px;
     }
 }
