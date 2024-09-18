@@ -1,15 +1,17 @@
 // referencia o container com os itens do carrossel
-const containerForCarousel = document.querySelector('#containerForCarousel');
+const wrapperCarousel = document.querySelector('#wrapperCarousel');
 
 //referencia as div que contem o carrossel
-const listCarousel = document.querySelectorAll('.carousel');
+const listCarousel = document.querySelectorAll('.carousel__item');
 
-//referencia as imagens do carroussel
-const listImgCarousel = document.querySelectorAll('.carousel-item');
+let count = 0;
+export function carousel() {
 
-//move os itens listCarousel para a esquerda
+    count++;
 
+    if (count > listCarousel.length  - 1) {
+        count = 0;
+    }
 
-
-
+}
 
