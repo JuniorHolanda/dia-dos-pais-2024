@@ -1,6 +1,5 @@
 //importa a função do circulo girando na primeira página
-import {circleRotation} from './assets/script/circleRotation.js'
+import { circleRotation } from './assets/script/circleRotation.js';
+import { cloneCarousel } from './assets/script/carousel.js';
 
-import { carousel } from './assets/script/carousel.js'
-
-carousel()
+cloneCarousel()

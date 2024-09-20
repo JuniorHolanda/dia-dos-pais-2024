@@ -1,17 +1,13 @@
-// referencia o container com os itens do carrossel
-const wrapperCarousel = document.querySelector('#wrapperCarousel');
+let containerCarousel = document.querySelector('#containerCarousel');
+const ListCarouselItem = document.querySelectorAll('.carousel__item');
 
-//referencia as div que contem o carrossel
-const listCarousel = document.querySelectorAll('.carousel__item');
+export function cloneCarousel() {
+    ListCarouselItem.forEach(element => {
+        // clona o item do carousel
+        const clone = element.cloneNode(true);
 
-let count = 0;
-export function carousel() {
+        containerCarousel.appendChild(clone)
+    });
 
-    count++;
-
-    if (count > listCarousel.length  - 1) {
-        count = 0;
-    }
-
+    console.log(containerCarousel)
 }
-

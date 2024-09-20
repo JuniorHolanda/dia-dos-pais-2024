@@ -1,3 +1,17 @@
 @mixin clamp ($propriety, $min-value, $ideal-value, $max-value){
     #{$propriety}: clamp($min-value, $ideal-value, $max-value);
 }
+
+@mixin text__card-carousel($align, $font, $weigth, $size){
+    text-align: $align;
+    font-family: $font;
+    font-weight: $weigth;
+    font-size: $size;
+    color: $sixth-color;
+    border: solid 1px $sixth-opacity;
+    padding: 5px 10px;
+    border-radius: 50px;
+    width: fit-content;
+    background-color: $sixth-opacity;
+    backdrop-filter: blur(2px);
+}
