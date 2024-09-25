@@ -1,5 +1,14 @@
 //importa a função do circulo girando na primeira página
 import { circleRotation } from './assets/script/circleRotation.js';
-import { cloneCarousel } from './assets/script/carousel.js';
+import { renderCarousel } from './assets/script/controllerCarousel.js';
+import { cloneCarousel } from './assets/script/controllerCarousel.js';
+import { handleCardHover } from './assets/script/controllerCarousel.js';
 
-cloneCarousel()
+//renderiza os cards do carousel
+renderCarousel();
+
+// cria interatividade nos cards do carousel
+handleCardHover();
+
+//clona os cards do renderCarousel
+cloneCarousel();
