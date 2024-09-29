@@ -12,30 +12,26 @@ export class CreateCardCarousel {
 
     determineText(title) {
         const descriptionMap = {
-            'Bandeja': 'Bandeja personalizada, ideal para brindes corporativos.',
-            'SqueezeSport': 'Garrafa esportiva personalizável, prática e durável.',
-            'GarrafaPot': 'Garrafa térmica personalizada, mantém a temperatura ideal.',
-            'GarrafaTank': 'Garrafa resistente e personalizável, para eventos.',
-            'MalaRedon': 'Mala personalizável, ideal para campanhas promocionais.',
-            'SqueezeD': 'Squeeze durável com design moderno para esportes.',
-            'MochilaAdv': 'Mochila versátil e personalizada para aventuras diárias.',
-            'MochilaSacola': 'Mochila sacola leve e prática, ideal para eventos.',
-            'TermicaMiu': 'Bolsa térmica compacta e útil, ideal para personalizar.'
+            'BolsaAcademia': 'Bolsa personalizada, ideal para brindes corporativos.',
+            'bolsaPst': 'Uma bolsa pratica e moderna para todos os clientes',
+            'bolsaAcademia':'Uma bolsa transversal espaçosa e resistente',
+            'mochilaSacola': 'Mochila sacola versátil, perfeita para o dia a dia e eventos.',
+            'mochilaAdv': 'Mochila personalizada, ideal para viagens e uso diário.',
+            'estojoAdv': 'Um estojo prático para todas ocasiões',
+            'sBag': 'uma pequena pag transversal que pode ser usada tambemn como pochete',
         };
         return descriptionMap[title] || 'Produto não encontrado';
     }
 
     getCategories(title) {
         const categoryMap = {
-            'Bandeja': ['Casa'],
-            'SqueezeSport': ['Esportes', 'Escolas'],
-            'GarrafaPot': ['Academia', 'Esportes', 'Escolas'],
-            'GarrafaTank': ['Academia', 'Esportes', 'Escolas'],
-            'MalaRedon': ['Academia', 'Esportes'],
-            'SqueezeD': ['Academia', 'Esportes', 'Escolas'],
-            'MochilaAdv': ['Corporativo', 'Congresso'],
-            'MochilaSacola': ['Academia', 'Esportes', 'Escolas'],
-            'TermicaMiu': ['Casa', 'Picnique']
+            'BolsaAcademia': ['Academia', 'Esportes'],
+            'bolsaPst': ['Esportes', 'Escolas'],
+            'bolsaAcademia': ['Esportes', 'Escolas'],
+            'mochilaSacola':  ['Esportes', 'Escolas', 'eventos'],
+            'mochilaAdv': ['eventos', 'Escolas', 'corporativo'],
+            'estojoAdv': ['diversos', 'Escolas', 'corporativo'],
+            'sBag': ['Escolas', 'esporte']
         };
         return categoryMap[title] || [];
     }
@@ -50,8 +46,8 @@ export class CreateCardCarousel {
             <ul class="carousel__category">
                 ${categoriesList}
             </ul>
-            <img class="carousel__img" src="${this.img}" alt="${this.alt}">
-            <img class=" carousel__second-img--hidden" src="${this.secondImg}" alt="${this.alt}">
+            <img class="carousel__img" id='firstImg' src="${this.img}" alt="${this.alt}">
+            <img class="carousel__img carousel__second-img--hidden" src="${this.secondImg}" alt="${this.alt}">
         </div>
         `;
     }

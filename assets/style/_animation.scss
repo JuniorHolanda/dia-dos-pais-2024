@@ -3,3 +3,26 @@
         transform: translateX(calc(-50% - 15px));
     }
 }
+
+@keyframes scale-up-center {
+    to {
+        opacity: 1;
+     }
+    
+     from {
+        opacity: 0;
+     }
+}
+
+@keyframes scale-out-top {
+ to {
+    opacity: 1;
+    visibility: visible;
+ }
+
+ from {
+    opacity: 0;
+    visibility: hidden;
+ }
+
+}

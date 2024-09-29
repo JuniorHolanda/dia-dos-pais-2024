@@ -1,17 +1,18 @@
 import { CreateCardCarousel } from "./models/CreateCardCarousel.js";
 const carouselContainer = document.querySelector('#carouselContainer')
 
+function imprimir(arg) {
+    return console.log(arg)
+}
+
 
 const listCardCarousel = [
-    'Bandeja',
-    'SqueezeSport',
-    'GarrafaPot',
-    'GarrafaTank',
-    'MalaRedon',
-    'SqueezeD',
-    'MochilaAdv',
-    'MochilaSacola',
-    'TermicaMiu'
+    'bolsaAcademia',
+    'bolsaPst',
+    'mochilaSacola',
+    'mochilaAdv',
+    'estojoAdv',
+    'sBag'
 ]
 
 
@@ -28,24 +29,9 @@ export function renderCarousel() {
 }
 
 
-// cria interatividade nos cards do carousel
-export function handleCardHover() {
-    // referencia as imagens do carousel__second-imag
-    const listCardCarouselRenderized = document.querySelectorAll('.carousel__second-img');
-
-    listCardCarouselRenderized.forEach(element => {
-        element.addEventListener('click', () => {
-            element.classList.add('carousel__second-img')
-            element.classList.remove('carousel__second-img--hidden')
-        })
-    });
-}
-
-
 // clona os cards para criar o efeito de carousel infinito
 export function cloneCarousel() {
-    const ListCarouselItem = newFunction();
-    console.log(ListCarouselItem)
+    const ListCarouselItem = selectImg('.carousel__item');
     ListCarouselItem.forEach(element => {
         // clona o item do carousel
         const clone = element.cloneNode(true);
@@ -53,7 +39,44 @@ export function cloneCarousel() {
     });
 }
 
-function newFunction() {
-    return document.querySelectorAll('.carousel__item');
+
+// cria interatividade nos cards do carousel
+export function handleCardHover() {
+    const ListCarouselItem = selectImg('.carousel__item');
+
+    //EM TESTE PARA VER SE CONSIGO SUMIR COM A IMAGEM PRIMARIA QUANDO ELA FOR SOBREPOSTA
+    const firstImg = document.querySelectorAll('.carousel__img');
+    imprimir(firstImg)
+
+    ListCarouselItem.forEach(element => {
+        const secondImg = element.querySelector('.carousel__second-img--hidden');
+        const firstImg = element.querySelector('#firstImg')
+        
+        element.addEventListener('mouseenter', () => {
+            //mostra o ca imagem secundaria
+            secondImg.classList.remove('carousel__second-img--hidden');
+            secondImg.classList.add('carousel__second-img');
+            
+            //esconde a imagem principal
+            firstImg.classList.remove('carousel__img');
+            firstImg.classList.add('carousel__first-img--hidden');
+        })
+
+        element.addEventListener('mouseleave', () => {
+            // esconde a imagem secundária
+            secondImg.classList.remove('carousel__second-img');
+            secondImg.classList.add('carousel__second-img--hidden');
+
+            //mostra a imgem principal
+            firstImg.classList.remove('carousel__first-img--hidden');
+            firstImg.classList.add('carousel__img');
+        })
+    });
+}
+
+
+// seleciona as diferentes img
+function selectImg(classImg) {
+    return document.querySelectorAll(classImg);
 }
 

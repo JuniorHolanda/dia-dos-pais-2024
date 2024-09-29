@@ -7,8 +7,9 @@ import { handleCardHover } from './assets/script/controllerCarousel.js';
 //renderiza os cards do carousel
 renderCarousel();
 
+//clona os cards do renderCarousel
+cloneCarousel();
+
 // cria interatividade nos cards do carousel
 handleCardHover();
 
-//clona os cards do renderCarousel
-cloneCarousel();
